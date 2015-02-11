@@ -16,7 +16,7 @@
         /// </summary>
         /// <typeparam name="T">type of this object</typeparam>
         /// <returns>JSON representation of this class</returns>
-        public string Serialize<T>()
+        protected string Serialize<T>()
         {
             using (var ms = new MemoryStream())
             {
@@ -36,7 +36,7 @@
         /// <typeparam name="T">type of object to return</typeparam>
         /// <param name="jsonString">Representation of object of type T as JSON.</param>
         /// <returns>An object of type T</returns>
-        public T Deserialize<T>(string jsonString)
+        protected T Deserialize<T>(string jsonString)
         {
             using (var ms = new MemoryStream())
             {
