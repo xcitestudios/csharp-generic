@@ -44,7 +44,7 @@
             }
         }
 
-        public void Deserialize(string jsonString)
+        public void DeserializeJSON(string jsonString)
         {
             var newObj = Deserialize<JsonSerializationHelperTestObject>(jsonString);
             StringA = newObj.StringA;
@@ -54,7 +54,7 @@
             DateTimeIgnored = newObj.DateTimeIgnored;
         }
 
-        public string Serialize()
+        public string SerializeJSON()
         {
             return Serialize<JsonSerializationHelperTestObject>();
         }
@@ -72,7 +72,7 @@
             item.IntItem = 875;
             item.FloatItem = 8.54F;
 
-            var jsonString = item.Serialize();
+            var jsonString = item.SerializeJSON();
 
             StringAssert.StartsWith(jsonString, "{");
             StringAssert.EndsWith(jsonString, "}");
@@ -84,7 +84,7 @@
 
             item.DateTimeIgnored = new DateTime(2015, 1, 5, 23, 11, 45, DateTimeKind.Utc);
 
-            jsonString = item.Serialize();
+            jsonString = item.SerializeJSON();
 
             StringAssert.Contains(jsonString, @"""datetime"":""2015-01-05T23:11:45+00:00""");
         }
@@ -99,10 +99,10 @@
             item.FloatItem = 8.54F;
             item.DateTimeIgnored = DateTime.Now;
 
-            var jsonString = item.Serialize();
+            var jsonString = item.SerializeJSON();
 
             var newItem = new JsonSerializationHelperTestObject();
-            newItem.Deserialize(jsonString);
+            newItem.DeserializeJSON(jsonString);
 
             Assert.AreEqual(item.StringA, newItem.StringA);
             Assert.AreEqual(item.StringB, newItem.StringB);

@@ -11,12 +11,12 @@
         /// as opposed to returning a new instance of this object.
         /// </summary>
         /// <param name="jsonString">Representation of the object</param>
-        void Deserialize(string jsonString);
+        void DeserializeJSON(string jsonString);
 
         /// <summary>
         /// Convert this object into JSON so it can be handled by anything that supports JSON.
         /// </summary>
         /// <returns>A JSON representation of this object</returns>
-        string Serialize();
+        string SerializeJSON();
     }
 }
