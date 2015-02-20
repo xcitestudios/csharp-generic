@@ -44,10 +44,14 @@
   <ItemGroup>
     <Compile Include="com\xcitestudios\Generic\Data\Manipulation\Interfaces\ISerialization.cs" />
     <Compile Include="com\xcitestudios\Generic\Data\Manipulation\JsonSerializationHelper.cs" />
+    <Compile Include="com\xcitestudios\Generic\Text\Interfaces\ITemplatedSerializable.cs" />
+    <Compile Include="com\xcitestudios\Generic\Text\Interfaces\ITemplated.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="LICENSE" />
     <None Include="README.md" />
   </ItemGroup>
