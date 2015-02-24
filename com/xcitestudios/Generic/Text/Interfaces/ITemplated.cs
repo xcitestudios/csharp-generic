@@ -1,4 +1,4 @@
-﻿namespace com.xcitestudios.Generic.com.xcitestudios.Generic.Text.Interfaces
+﻿namespace com.xcitestudios.Generic.Text.Interfaces
 {
     /// <summary>
     /// General interface for something that can render a template style string.

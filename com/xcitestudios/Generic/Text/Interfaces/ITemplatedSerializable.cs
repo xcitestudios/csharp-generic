@@ -1,4 +1,4 @@
-﻿namespace com.xcitestudios.Generic.com.xcitestudios.Generic.Text.Interfaces
+﻿namespace com.xcitestudios.Generic.Text.Interfaces
 {
     using global::com.xcitestudios.Generic.Data.Manipulation.Interfaces;
 

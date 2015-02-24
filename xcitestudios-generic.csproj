@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="com\xcitestudios\Generic\Data\Manipulation\Interfaces\ISerialization.cs" />
     <Compile Include="com\xcitestudios\Generic\Data\Manipulation\JsonSerializationHelper.cs" />
+    <Compile Include="com\xcitestudios\Generic\Interfaces\IValid.cs" />
     <Compile Include="com\xcitestudios\Generic\Text\Interfaces\ITemplatedSerializable.cs" />
     <Compile Include="com\xcitestudios\Generic\Text\Interfaces\ITemplated.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
