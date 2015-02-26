@@ -95,6 +95,11 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <Target Name="BeforeBuild">
+    <MakeDir Directories="NuGet" />
+    <MakeDir Directories="bin\Release\net40" />
+    <MakeDir Directories="bin\Release\net45" />
+  </Target>
   <Target Name="AfterBuild">
     <!-- Load up the information from the assembly -->
     <GetAssemblyIdentity AssemblyFiles="$(OutputPath)$(AssemblyName).dll">
@@ -104,8 +109,6 @@
   </Target>
 
   <Target Name="Package">
-    <!-- Ensure the Package directory exists for this project -->
-    <MakeDir Directories="NuGet" />
     <!-- Package the project -->
     <Exec WorkingDirectory="$(BuildDir)" Command=".nuget\NuGet.exe pack -Verbosity detailed -Symbols -OutputDir &quot;NuGet&quot; -Version %(OutputAssemblyInfo.Version) -Properties &quot;Configuration=$(Configuration)&quot;" />
   </Target>
