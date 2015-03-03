@@ -8,7 +8,7 @@ Interfaces designed to be re-used as part of other interfaces or having multiple
 From the start the packages are available on NuGet to make them easy to install in any project.
 
 ```sh
-$ Install-Package com.xcitestudios.Generic -Pre
+$ Install-Package com.xcitestudios.Generic
 ```
 
 Alternatively, just include the source files.
