@@ -13,12 +13,17 @@
     <releaseNotes>Initial release.</releaseNotes>
     <copyright>Copyright xcitestudios.com 2015</copyright>
     <tags>xcitestudios interface generic</tags>
-	<references>
-		<reference file="Nustache.Core.dll" />
-	</references>
+    <dependencies>
+      <dependency id="Nustache.Core" version="1.13.8.22" />
+      <dependency id="Nustache" version="1.13.8.22" />
+	</dependencies>
   </metadata>
   <files>
-        <file src="bin\Release\net40\*" target="lib\net40" />
-        <file src="bin\Release\net45\*" target="lib\net45" />
+        <file src="bin\Release\net40\com.xcitestudios.Generic.dll" target="lib\net40\com.xcitestudios.Generic.dll" />
+        <file src="bin\Release\net40\com.xcitestudios.Generic.pdb" target="lib\net40\com.xcitestudios.Generic.pdb" />
+        <file src="bin\Release\net40\com.xcitestudios.Generic.XML" target="lib\net40\com.xcitestudios.Generic.XML" />
+        <file src="bin\Release\net45\com.xcitestudios.Generic.dll" target="lib\net45\com.xcitestudios.Generic.dll" />
+        <file src="bin\Release\net45\com.xcitestudios.Generic.pdb" target="lib\net45\com.xcitestudios.Generic.pdb" />
+        <file src="bin\Release\net45\com.xcitestudios.Generic.XML" target="lib\net45\com.xcitestudios.Generic.XML" />
   </files>
 </package>
