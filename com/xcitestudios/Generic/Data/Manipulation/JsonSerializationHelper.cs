@@ -1,5 +1,6 @@
 ﻿namespace com.xcitestudios.Generic.Data.Manipulation
 {
+    using System;
     using System.IO;
     using System.Runtime.Serialization;
     using System.Runtime.Serialization.Json;
@@ -9,6 +10,7 @@
     /// Add this to a class and you can quickly convert it to JSON if it uses [DataMember] and [DataContract]
     /// </summary>
     [DataContractAttribute]
+    [Serializable]
     public abstract class JsonSerializationHelper
     {
         /// <summary>

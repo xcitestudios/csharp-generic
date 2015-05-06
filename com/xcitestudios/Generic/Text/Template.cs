@@ -3,6 +3,7 @@
     using com.xcitestudios.Generic.Data.Manipulation.Interfaces;
     using com.xcitestudios.Generic.Text.Interfaces;
     using Nustache.Core;
+    using System;
     using System.IO;
     using System.Runtime.Serialization;
     using System.Web.Script.Serialization;
@@ -11,6 +12,7 @@
     /// A simple implementation of <see cref="I:com.xcitestudios.Generic.Text.Interfaces.ITemplated"/>
     /// </summary>
     [DataContract]
+    [Serializable]
     public class Template : ITemplatedSerializable, ISerialization
     {
         /// <summary>
