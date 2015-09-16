@@ -50,6 +50,12 @@
   <PropertyGroup>
     <StartupObject />
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>com.xcitestudios.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Nustache.Core">
       <HintPath>packages\Nustache.1.15.3.5\lib\net20\Nustache.Core.dll</HintPath>
@@ -76,6 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="com.xcitestudios.snk" />
     <None Include="LICENSE" />
     <None Include="nuget.config" />
     <None Include="packages.config" />
